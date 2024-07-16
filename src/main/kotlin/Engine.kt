@@ -10,6 +10,7 @@ public open class Engine(open val name:String,open val color:String) {
         return "Engine(name=$name,color=$color)"
     }
 
+    //use for checking reference equality
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (other !is Engine) return false
